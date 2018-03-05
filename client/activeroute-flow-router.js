@@ -3,7 +3,7 @@ import { FlowRouter } from "meteor/kadira:flow-router";
 
 const clientAdapter = {
   getCurrentName() {
-    FlowRouter.getRouteName();
+    return FlowRouter.getRouteName();
   },
   getCurrentPath() {
     FlowRouter.watchPathChange();
